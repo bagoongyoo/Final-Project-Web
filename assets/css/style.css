@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
-nav.navbar {
-    background: linear-gradient(180deg, #257ca3 0%, rgba(0, 0, 0, 0));
+.navbar {
+    transition: background 0.3s ease, box-shadow 0.3s ease
+}
+
+.navbar-brand img {
+    transition: width 0.3s ease, height 0.3s ease
 }
 
 section#beranda {
@@ -80,3 +85,45 @@ section#produk .produk-item .ukuran-produk {
     padding: .5rem 1.2rem;
     border-radius: 5rem;
 }
+
+section#kontak {
+    overflow: hidden;
+    color: #f0f8ff;
+}
+section#kontak img.kertas-atas {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+section#kontak img.kertas-hitam {
+    position: absolute;
+    z-index: -2;
+}
+
+section#kontak .detail-kontak {
+    margin-top: 14rem;
+}
+
+section#kontak .detail-kontak .list-jadwal {
+    display: flex;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+section#kontak .detail-kontak .list-jadwal .dots {
+    flex-grow: 1;
+    border-bottom: 1.5px dotted #f0f8ff;
+    height: 0;
+    margin: 0 .5rem .5rem;
+}
+
+section#kontak .detail-kontak .hari {
+    white-space: nowrap;
+}
+
+section#kontak .detail-kontak .jam {
+    white-space: nowrap;
+    color: #257ca3;
+}
+
