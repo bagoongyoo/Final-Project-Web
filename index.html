@@ -16,23 +16,104 @@
 </head>
 <body>
     <!-- Section Navbar -->
-    <div class="container">
-        <nav class="navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-xl">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="60" height="60" alt="">
+                <img src="assets/img/logo.png" width="65" height="65" alt="logo-eskimo">
             </a>
-        </nav>
-    </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Section Beranda -->
     <section id="beranda">
+        <div class="overlay"></div>
         <img src="assets/img/es-kristal.jpg" alt="">
-        <h1 class="col-lg-4 col-md-10 col-sm-12">KESEHATAN DIMULAI DARI SINI</h1>
+        <div class="container-xl">
+            <h1 class="col-lg-6 col-md-10 col-sm-12">KESEHATAN DIMULAI DARI SINI</h1>
+        </div>
     </section>
 
     <!-- Section About -->
     <section id="about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ex!
+        <div class="container-xl pt-5">
+            <h1 class="mt-5 mb-5 text-center">Tentang Eskimo</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta necessitatibus rem saepe vel porro. Veritatis dignissimos, corrupti, necessitatibus a iusto inventore quam natus nisi vel ipsum voluptatibus corporis excepturi tenetur?
+            Dolorum perspiciatis sequi debitis, quo obcaecati delectus ipsum minima explicabo iste natus voluptate doloremque omnis, officia error numquam dolore rerum inventore eum alias? Nesciunt alias, facilis molestias corporis officiis quam.
+            Alias, odit nisi? Laborum culpa maiores fugit accusamus asperiores possimus! Impedit provident labore dolorum dicta ab explicabo nam qui pariatur. Eveniet consequatur iusto dolores voluptatem inventore culpa ut maiores sint!
+            Laboriosam repellendus officia, maiores aut quos eveniet voluptatum earum ab id natus doloremque est non necessitatibus mollitia voluptatibus sit, eos unde repellat voluptate minima. Consectetur aliquid error ipsum nobis esse?
+            Voluptatem quidem laboriosam hic earum adipisci possimus minima! Ullam magnam odit explicabo atque sapiente dolores, nisi aliquid. Mollitia totam suscipit temporibus dicta necessitatibus? Ea, voluptatibus ullam ducimus expedita fuga pariatur.
+        </div>
+    </section>
+
+    <!-- Section Detail -->
+    <section id="detail">
+        <img class="kertas-atas" src="assets/img/detail-kertas.png" alt="">
+        <div class="container-xl py-5 text-light">
+            <div class="row my-5">
+                <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <h1>25 Ton</h1>
+                    <span>Produksi Perhari</span>
+                </div>
+                <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <h1>10</h1>
+                    <span>Agen</span>
+                </div>
+                <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <h1>138+</h1>
+                    <span>Pelanggan Tetap</span>
+                </div>
+                <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+                    <h1>5.210 Kg</h1>
+                    <span>Penjualan Tiap Hari</span>
+                </div>
+            </div>
+        </div>
+        <img class="kertas-bawah" src="assets/img/detail-kertas.png" alt="">
+    </section>
+
+    <!-- Section Produk -->
+    <section id="produk">
+        <div class="container-xl pb-5">
+            <h1 class="text-center">PRODUK TERBAIK KAMI</h1>
+            <p class="tagline text-center font-weight-bold">Hemat, Tahan Lama & Higenis</p>
+            <div class="row">
+                <div class="produk-item col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/img/karung-es.png" alt="">
+                    <span class="nama-produk">Ice Cube</span>
+                    <span class="ukuran-produk">Kemasan 5 Kg</span>
+                </div>
+                <div class="produk-item ol-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/img/karung-es.png" alt="">
+                    <span class="nama-produk">Ice Cube</span>
+                    <span class="ukuran-produk">Kemasan 5 Kg</span>
+                </div>
+                <div class="produk-item col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/img/karung-es.png" alt="">
+                    <span class="nama-produk">Ice Cube</span>
+                    <span class="ukuran-produk">Kemasan 5 Kg</span>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <!-- Script -->

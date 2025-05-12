@@ -1,26 +1,30 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
 
-section#navbar {
-    position: fixed;
-    width: 100%;
-}
-
-section#navbar img {
-
+nav.navbar {
+    background: linear-gradient(180deg, #257ca3 0%, rgba(0, 0, 0, 0));
 }
 
 section#beranda {
     position: relative;
     width: 100%;
-    height: 100svh;
+    height: 100dvh;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+section#beranda .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #257ca3;
+    opacity: .3;
 }
 
 section#beranda img {
@@ -32,7 +36,47 @@ section#beranda img {
 }
 
 section#beranda h1 {
-    color: aliceblue;
+    color: #f0f8ff;
     font-size: 72px;
-    margin-left: 10%;
+}
+
+section#about {
+    /* background-color: #f0f8ff; */
+}
+
+section#detail {
+    background-color: #38acc2;
+    overflow: hidden;
+}
+
+section#detail img.kertas-atas {
+    transform: rotate(180deg);
+}
+
+section#detail h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+section#detail span {
+    font-size: 20px;
+}
+
+section#produk p {
+    font-size: 56px;
+}
+
+section#produk .produk-item .nama-produk {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+section#produk .produk-item .ukuran-produk {
+    margin-top: .3rem;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #257ca3;
+    color: aliceblue;
+    padding: .5rem 1.2rem;
+    border-radius: 5rem;
 }
