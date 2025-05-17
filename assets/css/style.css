@@ -13,6 +13,11 @@
     transition: width 0.3s ease, height 0.3s ease
 }
 
+.animate__animation {
+    opacity: 0;
+    transition: all .3s ease;
+}
+
 section#beranda {
     position: relative;
     width: 100%;
@@ -63,7 +68,7 @@ section#detail h1 {
     font-weight: bold;
 }
 
-section#detail span {
+section#detail span.text {
     font-size: 20px;
 }
 
@@ -98,6 +103,7 @@ section#kontak img.kertas-atas {
 }
 section#kontak img.kertas-hitam {
     position: absolute;
+    width: 100%;
     z-index: -2;
 }
 

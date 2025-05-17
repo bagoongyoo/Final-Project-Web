@@ -52,3 +52,65 @@ $(window).on('scroll', function() {
     }
   })
 })
+
+let counterTriggered = false
+$('#detail').waypoint(function() {
+    if (!counterTriggered) {
+      $('.counter').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now))
+          }
+        })
+      })
+      counterTriggered = true // hanya jalan sekali
+    }
+  }, {
+    offset: '80%' // mulai animasi saat 80% dari atas viewport
+  })
+
+  // Slide In Left
+  $('.animation__slideInLeft').each(function() {
+    const element = $(this)
+    const slideInLeft = 'animate__slideInLeft'
+    
+    element.waypoint(function (direction) {
+      if (direction === 'down') {
+        element
+          .addClass('animate__animated ' + slideInLeft)
+          .css('opacity', 1)
+      } else {
+        element
+          .removeClass('animate_animated ' + slideInLeft)
+          .css('opacity', 0)
+      }
+    }, {
+      // Kapan animasi mulai berjalan
+      offset: '75%'
+    })
+  })
+
+  // Slide In Right
+  $('.animation__slideInRight').each(function() {
+    const element = $(this)
+    const slideInRight = 'animate__slideInRight'
+    
+    element.waypoint(function (direction) {
+      if (direction === 'down') {
+        element
+          .addClass('animate__animated ' + slideInRight)
+          .css('opacity', 1)
+      } else {
+        element
+          .removeClass('animate_animated ' + slideInRight)
+          .css('opacity', 0)
+      }
+    }, {
+      // Kapan animasi mulai berjalan
+      offset: '75%'
+    })
+  })
