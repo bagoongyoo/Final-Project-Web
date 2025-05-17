@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link Aos -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Section Navbar -->
@@ -179,103 +182,92 @@
     </section>
 
     <!-- Section Kontak -->
-    <section id="kontak">
-        <img class="kertas-atas" src="assets/img/detail-kertas.png" alt="">
-        <img class="kertas-hitam" src="assets/img/bg-kontak.png" alt="" class="img-fluid">
-        <div class="container-xl">
-            <div class="row detail-kontak">
-                <div class="col-md-4 col-6">
-                    <h1 class="mb-4">Kontak</h1>
-                    <div class="list-kontak mb-4">
-                        <img src="assets/img/icon-lokasi.png" alt="">
-                        <span class="ml-2">Jl. Anggrek No.10 Amparita - Sidrap</span>
-                    </div>
-                    <div class="list-kontak mb-4">
-                        <img src="assets/img/icon-email.png" alt="">
-                        <span class="ml-2">cs@kimo.co.id</span>
-                    </div>
-                    <div class="list-kontak mb-4">
-                        <img src="assets/img/icon-telpon.png" alt="">
-                        <span class="ml-2">0876-8765-4353</span>
-                    </div>
+<section id="kontak">
+    <img class="kertas-atas" src="assets/img/detail-kertas.png" alt="" data-aos="fade-down" data-aos-duration="800">
+    <img class="kertas-hitam" src="assets/img/bg-kontak.png" alt="" class="img-fluid" data-aos="fade-in" data-aos-delay="200">
+    <div class="container-xl">
+        <div class="row detail-kontak">
+            <div class="col-md-4 col-6" data-aos="fade-right" data-aos-duration="800">
+                <h1 class="mb-4">Kontak</h1>
+                <div class="list-kontak mb-4">
+                    <img src="assets/img/icon-lokasi.png" alt="">
+                    <span class="ml-2">Jl. Anggrek No.10 Amparita - Sidrap</span>
                 </div>
-                <div class="col-md-4 col-6">
-                    <h1 class="mb-4">Buka</h1>
-                    <div class="list-jadwal">
-                        <span class="hari">Senin</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
-                    <div class="list-jadwal">
-                        <span class="hari">Selasa</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
-                    <div class="list-jadwal">
-                        <span class="hari">Rabu</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
-                    <div class="list-jadwal">
-                        <span class="hari">Kamis</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
-                    <div class="list-jadwal">
-                        <span class="hari">Jum'at</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
-                    <div class="list-jadwal">
-                        <span class="hari">Sabtu</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
-                    <div class="list-jadwal">
-                        <span class="hari">Minggu</span>
-                        <span class="dots"></span>
-                        <span class="jam">07.30 - 22.00</span>
-                    </div>
+                <div class="list-kontak mb-4">
+                    <img src="assets/img/icon-email.png" alt="">
+                    <span class="ml-2">cs@kimo.co.id</span>
                 </div>
-                <div class="col-md-4 d-none d-md-block">
-                    <h1 class="mb-4">Galeri</h1>
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/img/ig-image-1.png" alt="">
-                        </div>
-                    </div>
+                <div class="list-kontak mb-4">
+                    <img src="assets/img/icon-telpon.png" alt="">
+                    <span class="ml-2">0876-8765-4353</span>
+                </div>
+            </div>
+            <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
+                <h1 class="mb-4">Buka</h1>
+                <div class="list-jadwal">
+                    <span class="hari">Senin</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+                <div class="list-jadwal">
+                    <span class="hari">Selasa</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+                <div class="list-jadwal">
+                    <span class="hari">Rabu</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+                <div class="list-jadwal">
+                    <span class="hari">Kamis</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+                <div class="list-jadwal">
+                    <span class="hari">Jum'at</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+                <div class="list-jadwal">
+                    <span class="hari">Sabtu</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+                <div class="list-jadwal">
+                    <span class="hari">Minggu</span>
+                    <span class="dots"></span>
+                    <span class="jam">07.30 - 22.00</span>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                <h1 class="mb-4">Galeri</h1>
+                <div class="row mb-3">
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="500"></div>
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="600"></div>
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="700"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="800"></div>
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="900"></div>
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="1000"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="1100"></div>
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="1200"></div>
+                    <div class="col-4"><img src="assets/img/ig-image-1.png" alt="" data-aos="zoom-in" data-aos-delay="1300"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- inisialisasi -->
+<script>
+  AOS.init();
+</script>
+
 </body>
 <!-- Script -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
