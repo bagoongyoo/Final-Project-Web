@@ -114,3 +114,23 @@ $('#detail').waypoint(function() {
       offset: '75%'
     })
   })
+
+   $('.animation__slideInUp').each(function() {
+    const element = $(this)
+    const slideInUp = 'animate__slideInUp'
+    
+    element.waypoint(function (direction) {
+      if (direction === 'down') {
+        element
+          .addClass('animate__animated ' + slideInUp)
+          .css('opacity', 1)
+      } else {
+        element
+          .removeClass('animate_animated ' + slideInUp)
+          .css('opacity', 0)
+      }
+    }, {
+      // Kapan animasi mulai berjalan
+      offset: '75%'
+    })
+  })
