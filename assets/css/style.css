@@ -140,9 +140,74 @@ section#produk .produk-item .ukuran-produk {
     border-radius: 5rem;
 }
 
+section#prioritas .prioritas-card {
+    perspective: 1000px;
+    position: relative;
+}
+
+section#prioritas .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+section#prioritas .prioritas-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+section#prioritas .card-face {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+section#prioritas .card-face.front {
+    background: white;
+}
+
+section#prioritas .card-face.back {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #bedfef, #81bed2);
+    color: #ffffff;
+    padding: 1rem;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 1.1rem;
+}
+section#prioritas .card-face.back{
+background-color: #257ca3;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20 px;
+  box-shadow: 0 4px 10px 5px  rgba(0, 0, 0.20, 0.25);
+}
+
+section#prioritas img {
+    border-radius: 1rem;
+}
+
+section#prioritas .card-face.front span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #f0f8ff;
+    font-size: 2rem;
+}
+
 section#kontak {
     overflow: hidden;
     color: #f0f8ff;
+    
 }
 section#kontak img.kertas-atas {
     position: absolute;
@@ -153,6 +218,7 @@ section#kontak img.kertas-atas {
 section#kontak img.kertas-hitam {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: -2;
 }
 
@@ -182,3 +248,16 @@ section#kontak .detail-kontak .jam {
     color: #257ca3;
 }
 
+section#kontak .gambar-galeri {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+section#kontak .ml-2 {
+    color: #ffffff;
+}
+
+.ml-2:hover {
+    color: #38acc2;
+}
