@@ -206,6 +206,8 @@ section#prioritas .card-face.front span {
 section#kontak {
     overflow: hidden;
     color: #f0f8ff;
+    position: relative;
+    min-height: 100vh;
 }
 
 section#kontak img.kertas-atas {
@@ -220,10 +222,12 @@ section#kontak img.kertas-hitam {
     width: 100%;
     height: 100%;
     z-index: -2;
+    object-fit: cover;
 }
 
 section#kontak .detail-kontak {
     margin-top: 14rem;
+    padding-bottom: 5rem;
 }
 
 section#kontak .detail-kontak .list-jadwal {
@@ -249,9 +253,11 @@ section#kontak .detail-kontak .jam {
 }
 
 section#kontak .gambar-galeri {
-    width: 100px;
+    width: 100%;
     height: 100px;
     border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 section#kontak .ml-2 {
@@ -260,6 +266,24 @@ section#kontak .ml-2 {
 
 .ml-2:hover {
     color: #38acc2;
+}
+
+section#galeri {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+section#galeri .gambar-galeri {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#galeri .gambar-galeri:hover {
+    transform: scale(1.05);
 }
 
 /* Media Queries */
@@ -336,6 +360,7 @@ section#kontak .ml-2 {
     
     section#kontak .detail-kontak {
         margin-top: 8rem;
+        padding-bottom: 3rem;
     }
 
     section#beranda img {
@@ -346,6 +371,10 @@ section#kontak .ml-2 {
     section#detail img.kertas-bawah {
         width: 100%;
         height: auto;
+    }
+    
+    section#kontak .gambar-galeri {
+        height: 80px;
     }
 }
 
@@ -373,6 +402,7 @@ section#kontak .ml-2 {
     
     section#kontak .detail-kontak {
         margin-top: 6rem;
+        padding-bottom: 2rem;
     }
 
     section#prioritas .card-inner {
@@ -381,5 +411,32 @@ section#kontak .ml-2 {
     
     section#prioritas .card-face.back {
         font-size: 0.9rem;
+    }
+
+    section#kontak .gambar-galeri {
+        height: 70px;
+        margin-bottom: 0.5rem;
+    }
+    
+    section#kontak .col-4 {
+        padding: 0 5px;
+    }
+    
+    section#kontak .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    section#galeri .gambar-galeri {
+        height: 100px;
+    }
+    
+    section#galeri .col-4 {
+        padding: 0 5px;
+    }
+    
+    section#galeri .row {
+        margin-left: -5px;
+        margin-right: -5px;
     }
 }
