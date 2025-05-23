@@ -178,7 +178,7 @@ section#prioritas .card-face.back {
     padding: 1rem;
     transform: rotateY(180deg);
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 section#prioritas .card-face.back{
@@ -397,7 +397,7 @@ section#galeri .gambar-galeri:hover {
     }
     
     section#prioritas .card-face.front span {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
     section#kontak .detail-kontak {
@@ -410,7 +410,7 @@ section#galeri .gambar-galeri:hover {
     }
     
     section#prioritas .card-face.back {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     section#kontak .gambar-galeri {
