@@ -61,7 +61,6 @@ section#about .img-ice{
     border-radius: 15px;
     height: 100%;
     width: 100%;
-    /* background-color: #f0f8ff; */
 }
 
 section#about .deskripsi {
@@ -158,7 +157,6 @@ section#prioritas .prioritas-card:hover .card-inner {
 }
 
 section#prioritas .card-face {
-    /* position: absolute; */
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -182,12 +180,13 @@ section#prioritas .card-face.back {
     text-align: center;
     font-size: 1.1rem;
 }
+
 section#prioritas .card-face.back{
-background-color: #257ca3;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 20 px;
-  box-shadow: 0 4px 10px 5px  rgba(0, 0, 0.20, 0.25);
+    background-color: #257ca3;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 5px  rgba(0, 0, 0.20, 0.25);
 }
 
 section#prioritas img {
@@ -207,14 +206,15 @@ section#prioritas .card-face.front span {
 section#kontak {
     overflow: hidden;
     color: #f0f8ff;
-    
 }
+
 section#kontak img.kertas-atas {
     position: absolute;
     width: 100%;
     z-index: -1;
     transform: rotate(180deg);
 }
+
 section#kontak img.kertas-hitam {
     position: absolute;
     width: 100%;
@@ -260,4 +260,126 @@ section#kontak .ml-2 {
 
 .ml-2:hover {
     color: #38acc2;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    section#beranda h1 {
+        font-size: 56px;
+    }
+    
+    section#detail h1 {
+        font-size: 48px;
+    }
+    
+    .layanan-card {
+        height: auto;
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section#beranda h1 {
+        font-size: 48px;
+    }
+    
+    section#about .foto-beranda {
+        height: 450px;
+        width: 350px;
+    }
+    
+    section#detail {
+        padding: 10rem 0;
+    }
+    
+    section#prioritas .col-4 {
+        margin-bottom: 2rem;
+    }
+
+    .navbar-collapse {
+        background-color: #257ca3;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#beranda h1 {
+        font-size: 36px;
+    }
+    
+    section#about .foto-beranda {
+        height: 350px;
+        width: 280px;
+    }
+    
+    section#detail h1 {
+        font-size: 36px;
+    }
+    
+    section#detail span.text {
+        font-size: 16px;
+    }
+    
+    section#prioritas .card-face.front span {
+        font-size: 1.5rem;
+    }
+    
+    section#kontak .detail-kontak {
+        margin-top: 8rem;
+    }
+
+    section#beranda img {
+        object-position: center;
+    }
+    
+    section#detail img.kertas-atas,
+    section#detail img.kertas-bawah {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section#beranda h1 {
+        font-size: 28px;
+    }
+    
+    section#about .foto-beranda {
+        height: 300px;
+        width: 240px;
+    }
+    
+    section#detail h1 {
+        font-size: 28px;
+    }
+    
+    .layanan-card {
+        min-height: 400px;
+    }
+    
+    section#prioritas .card-face.front span {
+        font-size: 1.2rem;
+    }
+    
+    section#kontak .detail-kontak {
+        margin-top: 6rem;
+    }
+
+    section#prioritas .card-inner {
+        height: 250px;
+    }
+    
+    section#prioritas .card-face.back {
+        font-size: 0.9rem;
+    }
 }
